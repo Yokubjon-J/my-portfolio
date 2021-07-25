@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <style>
+        #btn-back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+    </style>
+  </head>
+  <body>
+    <nav style="margin:-10px; margin-bottom: 10px;" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#pros">My Projects</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#abt">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ints">Interests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<section class='s1'>
+    <div class='my-main-container'>
+        <h3 style="text-align: center;" id="pros">My Projects</h3>
+        <div class='post-wrapper'>
+            <div>
+            <div class="post">
+                <img class='thumbnail' src="https://picsum.photos/320/100/?blur=1">
+                <div class="post-preview">
+                    <h4 class="post-title">React Quiz App</h4>
+                    <p class="post-intro">With hooks and lovely styles!</p>
+                    <a target="_blank" href="https://heroku-003.herokuapp.com/">Take a look!</a>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="post">
+                <img class='thumbnail' src="https://picsum.photos/seed/picsum/320/100">
+                <div class="post-preview">
+                    <h4 class="post-title">React Chat App</h4>
+                    <p class="post-intro">With hooks and socket.io!</p>
+                    <a target="_blank" href="https://chat-app1.netlify.app">Take a look!</a>
+                </div>
+            </div>
+            </div>
+            <div>
+            <div class="post">
+                <img class='thumbnail' src="https://unsplash.it/320/100">
+                <div class="post-preview">
+                    <h4 class="post-title">MERN stack App</h4>
+                    <p class="post-intro">MERN Stack</p>
+                    <a target="_blank" href="https://kind-hermann-c09404.netlify.app/">Take a look!</a>
+                </div>
+            </div>
+            </div>
+            <div>
+                <div class="post">
+                    <img class='thumbnail' src="https://picsum.photos/id/244/320/100">
+                    <div class="post-preview">
+                        <h4 class="post-title">Fake Shop</h4>
+                        <p class="post-intro">Experimental (with ReactJS)</p>
+                        <a target="_blank" href="https://happy-chandrasekhar-6c4b79.netlify.app/">Take a look!</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="post">
+                    <img class='thumbnail' src="https://picsum.photos/id/344/320/100">
+                    <div class="post-preview">
+                        <h4 class="post-title">E-commerce App</h4>
+                        <p class="post-intro">With commerce.js API</p>
+                        <a target="_blank" href="https://my-ecomm-store.netlify.app/">Take a look!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <h1 id="abt">Skills</h1>
+    <p>I specialize on MERN stack and want to learn mre about FP. Besides JS, I know Typescrit and Python (important for MongoDB). For frontend styling, I like to use Material UI (for ReactJS apps). I also enjoy coding problems</p>
+    <h1 id="ints">My interests</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Contact me
+                    </div>
+                    <div class="card-body">
+                        <form action="https://formspree.io/f/moqyjzre"  method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Name/Organization</label>
+                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your email address</label>
+                                <input name="_replyto" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                <small id="emailHelp" class="form-text text-muted">I willll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea name="message" placeholder="Type your message" class="form-control" id="message" rows="6" required></textarea>
+                            </div>
+                            <div class="mx-auto">
+                            <button type="submit" class="btn btn-primary text-right">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="card bg-light mb-3">
+                    <div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> Address</div>
+                    <div class="card-body">
+                        <p>Yunusabad Dist, 8/7/30</p>
+                        <p>Tashkent City</p>
+                        <p>Uzbekistan</p>
+                        <p>Email : yoltemur@gmail.com</p>
+                        <p>Tel. +998 91 959 10 81</p>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 col-xl-3">
+                    <h5>About</h5>
+                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                    <p class="mb-0">
+                        Web developer.
+                    </p>
+                </div>
+        
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                    <h5>Get in touch!</h5>
+                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                    <ul class="list-unstyled">
+                        <li><a href="https://leetcode.com/Masruq/" target="_blank" style="text-decoration: none;"><span class="iconify" data-icon="simple-icons:leetcode" data-inline="false"></span>&nbsp; Leetcode</a></li>
+                        <li><a href="https://www.linkedin.com/in/yoqubjon-jo-rayev-758b981b4/" target="_blank" style="text-decoration: none;"><span class="iconify" data-icon="logos:linkedin-icon" data-inline="false"></span>&nbsp; LinkedIn</a></li>
+                        <li><a href="https://github.com/Yokubjon-J" target="_blank" style="text-decoration: none;"><span class="iconify" data-icon="logos:github" data-inline="false"></span>&nbsp; GitHub</a></li>
+                        <li><a href="https://codepen.io/user_jacob" target="_blank" style="text-decoration: none;"><span class="iconify" data-icon="akar-icons:codepen-fill" data-inline="false"></span>&nbsp; CodePen</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h5>Contacts</h5>
+                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-home mr-2"></i>JavaScript Services</li>
+                        <li><i class="fa fa-envelope mr-2"></i> yoltemur@gmail.com</li>
+                        <li><i class="fa fa-phone mr-2"></i>+998 91 959 10 81</li>
+                    </ul>
+                </div>
+                <div class="col-12 copyright mt-3">
+                    <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="https://t-php.fr/43-theme-ecommerce-bootstrap-4.html"><i>t-php</i></a> | <span>v. 1.0</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div></div>
+    <script>
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
